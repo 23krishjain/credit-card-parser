@@ -39,7 +39,6 @@ A powerful, universal parser that extracts transactions and key details from cre
 ---
 
 ### 🧩 Project Structure
-
 ```text
 credit-card-parser/
 ├── parser_unified.py       # Core parser logic
@@ -51,23 +50,18 @@ credit-card-parser/
 ├── sample_statements/      # Sample PDF statements for testing
 └── results/                # Output directory for parsed results
 
-
 ---
 
 ## ⚙️ Installation & Setup (Local)
 
-1. **Clone the repository**
+### Clone the repository
 ```bash
 git clone https://github.com/23krishjain/credit-card-parser.git
 cd credit-card-parser
-
-Install dependencies
-
+### Install dependencies
 pip install -r requirements.txt
 
-
 Run the Streamlit app
-
 streamlit run unified_app.py
 
 🧠 How It Works
@@ -103,7 +97,7 @@ The parsed data is displayed and saved in the results/ directory.
 
 🧪 Sample Test Files
 
-Test the parser using PDFs in sample_statements/:
+Use the PDFs in the sample_statements/ folder to test the parser:
 
 amex_statement.pdf
 
@@ -115,20 +109,25 @@ testCase01.pdf (HDFC)
 
 📦 Deployment on Render (Docker)
 
-Add Dockerfile (already in repo) and .dockerignore.
+Ensure the following files are present:
 
-Commit and push to GitHub.
+Dockerfile
 
-On Render
-:
+.dockerignore
 
-New → Web Service → Docker
+render-build.sh
 
-Connect your repo → Branch main
+Commit and push your code to GitHub.
+
+On Render:
+
+Create a new → Web Service → Docker
+
+Connect your repo → Select the main branch
 
 Build & deploy
 
-Access your live app at https://<your-app-name>.onrender.com
+Access your app at https://<your-app-name>.onrender.com
 
 Build Command (Render):
 
@@ -140,22 +139,19 @@ Start Command:
 streamlit run unified_app.py --server.port $PORT --server.address 0.0.0.0
 
 
-Tip: Streamlit apps on Render should use /tmp for temporary file storage.
+💡 Tip: Streamlit apps on Render should use /tmp for temporary file storage.
 
-💡 Future Improvements
+🔮 Future Improvements
 
-Add more international banks
+Add support for more international banks
 
-Export to CSV / Excel formats
+Export transactions to CSV / Excel formats
 
 Integrate with budgeting dashboards
 
-Improve OCR accuracy with AI-based models
+Improve OCR accuracy using AI-based models
 
-🧑‍💻 Author
+👨‍💻 Author
 
 Krish Jain
-
 📧 23krishjain@gmail.com
-
-
