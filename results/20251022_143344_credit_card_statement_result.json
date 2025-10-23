@@ -1,0 +1,15 @@
+{
+  "card_issuer": "Chase",
+  "card_last_four": "1234",
+  "billing_cycle_start": "Not found",
+  "billing_cycle_end": "Not found",
+  "payment_due_date": "Not found",
+  "total_balance": "1392.71",
+  "minimum_payment": "Not found",
+  "available_credit": "10,607.29",
+  "transactions": [],
+  "extraction_method": "pdfplumber",
+  "is_scanned": false,
+  "raw_text_preview": "\ue401\nBUILDING BLOCKS STUDENT HANDOUT\nSample credit card statement\nName: Susan Doe For Lost or Stolen Card, Call:\nAddress: 1234 Main Street, Anytown, USA 1-800-XXX-XXXX\nAccount Number: 12345-67-8907\nPayment Information\nDate: 12/30/XX\nPayment Due Date: 1/23/XX\nNew Balance: $1392.71\nMinimum Payment: $25\nAccount Summary Payment Information\nPrevious Balance $482.42 New Balance $1,392.71\nPayment, Credits -$350.42 Payment Due Date 1/23/XX\nPurchases $1,258.56 Minimum Payment Due $25\nCash Advances $0\nBalanc",
+  "transaction_count": 0
+}

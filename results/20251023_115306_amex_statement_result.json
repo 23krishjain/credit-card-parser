@@ -1,0 +1,62 @@
+{
+  "card_issuer": "Amex",
+  "card_last_four": "Not found",
+  "billing_cycle_start": "Not found",
+  "billing_cycle_end": "Not found",
+  "payment_due_date": "February 20, 2024",
+  "total_balance": "Not found",
+  "minimum_payment": "125.00",
+  "available_credit": "Not found",
+  "transactions": [
+    {
+      "date": "01/02",
+      "description": "DELTA AIR LINES",
+      "amount": "$567.00",
+      "category": "Travel"
+    },
+    {
+      "date": "01/04",
+      "description": "HILTON HOTELS",
+      "amount": "$345.80",
+      "category": "Travel"
+    },
+    {
+      "date": "01/08",
+      "description": "BEST BUY #45678",
+      "amount": "$899.99",
+      "category": "Shopping"
+    },
+    {
+      "date": "01/11",
+      "description": "RESTAURANT SMITH & WOLLENSKY",
+      "amount": "$156.78",
+      "category": "Dining"
+    },
+    {
+      "date": "01/15",
+      "description": "TRADER JOES",
+      "amount": "$89.45",
+      "category": "Groceries"
+    },
+    {
+      "date": "01/18",
+      "description": "APPLE STORE ONLINE",
+      "amount": "$1,299.00",
+      "category": "Shopping"
+    },
+    {
+      "date": "01/21",
+      "description": "ENTERPRISE RENT-A-CAR",
+      "amount": "$234.56",
+      "category": "Other"
+    },
+    {
+      "date": "01/25",
+      "description": "HOME DEPOT #3456",
+      "amount": "$299.87",
+      "category": "Other"
+    }
+  ],
+  "extraction_method": "pdfplumber + Camelot",
+  "is_scanned": false
+}

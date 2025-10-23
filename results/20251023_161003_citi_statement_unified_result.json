@@ -1,0 +1,76 @@
+{
+  "card_issuer": "Citi",
+  "card_last_four": "9012",
+  "billing_cycle_start": "01/31/2024",
+  "billing_cycle_end": "01/31/2024",
+  "payment_due_date": "02/28/2024",
+  "total_balance": "1,678.34",
+  "minimum_payment": "45.00",
+  "available_credit": "8,321.66",
+  "transactions": [
+    {
+      "date": "01/05",
+      "description": "CVS PHARMACY #8765",
+      "amount": "$34.56",
+      "category": "Other"
+    },
+    {
+      "date": "01/08",
+      "description": "CHEVRON 098765",
+      "amount": "$58.90",
+      "category": "Transportation"
+    },
+    {
+      "date": "01/10",
+      "description": "MCDONALDS F23456",
+      "amount": "$12.34",
+      "category": "Dining"
+    },
+    {
+      "date": "01/13",
+      "description": "VERIZON WIRELESS",
+      "amount": "$89.99",
+      "category": "Utilities"
+    },
+    {
+      "date": "01/16",
+      "description": "NORDSTROM #234",
+      "amount": "$234.50",
+      "category": "Shopping"
+    },
+    {
+      "date": "01/19",
+      "description": "UBER EATS",
+      "amount": "$45.67",
+      "category": "Transportation"
+    },
+    {
+      "date": "01/22",
+      "description": "LOWES #0987",
+      "amount": "$567.89",
+      "category": "Other"
+    },
+    {
+      "date": "01/25",
+      "description": "STARBUCKS",
+      "amount": "$6.78",
+      "category": "Dining"
+    },
+    {
+      "date": "01/28",
+      "description": "KROGER #4567",
+      "amount": "$123.45",
+      "category": "Groceries"
+    },
+    {
+      "date": "01/30",
+      "description": "HULU",
+      "amount": "$7.99",
+      "category": "Entertainment"
+    }
+  ],
+  "extraction_method": "pdfplumber + Camelot",
+  "is_scanned": false,
+  "raw_text_preview": "Citi\nAccount ending in: 9012\nStatement Date: 01/31/2024\nStatement Period: 01/01/2024 to 01/31/2024\nPayment Due Date: 02/28/2024\nNew Balance: $1,678.34\nMinimum Payment: $45.00\nAvailable Credit: $8,321.66\nACCOUNT ACTIVITY\nDate Description Amount\n01/05 CVS PHARMACY #8765 $34.56\n01/08 CHEVRON 098765 $58.90\n01/10 MCDONALDS F23456 $12.34\n01/13 VERIZON WIRELESS $89.99\n01/16 NORDSTROM #234 $234.50\n01/19 UBER EATS $45.67\n01/22 LOWES #0987 $567.89\n01/25 STARBUCKS $6.78\n01/28 KROGER #4567 $123.45\n01/30 HUL",
+  "transaction_count": 10
+}

@@ -1,0 +1,64 @@
+{
+  "card_issuer": "Amex",
+  "card_last_four": "5678",
+  "billing_cycle_start": "January 1, 2024",
+  "billing_cycle_end": "January 31, 2024",
+  "payment_due_date": "February 20, 2024",
+  "total_balance": "3,892.45",
+  "minimum_payment": "125.00",
+  "available_credit": "6,107.55",
+  "transactions": [
+    {
+      "date": "01/02",
+      "description": "DELTA AIR LINES",
+      "amount": "$567.00",
+      "category": "Transportation"
+    },
+    {
+      "date": "01/04",
+      "description": "HILTON HOTELS",
+      "amount": "$345.80",
+      "category": "Travel"
+    },
+    {
+      "date": "01/08",
+      "description": "BEST BUY #45678",
+      "amount": "$899.99",
+      "category": "Shopping"
+    },
+    {
+      "date": "01/11",
+      "description": "RESTAURANT SMITH & WOLLENSKY",
+      "amount": "$156.78",
+      "category": "Dining"
+    },
+    {
+      "date": "01/15",
+      "description": "TRADER JOES",
+      "amount": "$89.45",
+      "category": "Groceries"
+    },
+    {
+      "date": "01/18",
+      "description": "APPLE STORE ONLINE",
+      "amount": "$1,299.00",
+      "category": "Shopping"
+    },
+    {
+      "date": "01/21",
+      "description": "ENTERPRISE RENT-A-CAR",
+      "amount": "$234.56",
+      "category": "Travel"
+    },
+    {
+      "date": "01/25",
+      "description": "HOME DEPOT #3456",
+      "amount": "$299.87",
+      "category": "Other"
+    }
+  ],
+  "extraction_method": "pdfplumber + Camelot",
+  "is_scanned": false,
+  "raw_text_preview": "American Express\nCard Account: ****5678\nStatement Period: January 1, 2024 to January 31, 2024\nPayment Due Date: February 20, 2024\nTotal Amount Due: $3,892.45\nMinimum Payment Due: $125.00\nCredit Available: $6,107.55\nCHARGES AND CREDITS\nDate Description Amount\n01/02 DELTA AIR LINES 567.00\n01/04 HILTON HOTELS 345.80\n01/08 BEST BUY #45678 899.99\n01/11 RESTAURANT SMITH & WOLLENSKY 156.78\n01/15 TRADER JOES 89.45\n01/18 APPLE STORE ONLINE 1,299.00\n01/21 ENTERPRISE RENT-A-CAR 234.56\n01/25 HOME DEPOT #345",
+  "transaction_count": 8
+}

@@ -1,0 +1,28 @@
+{
+  "card_issuer": "HDFC",
+  "card_last_four": "6529",
+  "billing_cycle_start": "06/13/2025",
+  "billing_cycle_end": "Not found",
+  "payment_due_date": "Not found",
+  "total_balance": "Not found",
+  "minimum_payment": "₹06",
+  "available_credit": "Not found",
+  "transactions": [
+    {
+      "date": "07/03/2025",
+      "description": "25,625.00",
+      "amount": "₹1,290.00",
+      "category": "Other"
+    },
+    {
+      "date": "13/05/2025\n13/05/2025\n13/05/2025\n13/05/2025\n14/05/2025\n16/05/2025\n05/06/2025\n05/06/2025\n06/06/2025\n07/06/2025\n07/06/2025\n08/06/2025\n08/06/2025\n \n13/06/2025",
+      "description": "NAMAN VIPUL SHAH ZEPTO MARKETPLACE PRIV Bengaluru BLINK COMMERCE PVT LTD BANGALO",
+      "amount": "447.52630.00388.00159.47853.00399.00900.00162.003000.0012.121224.12554.495.49940.12",
+      "category": "Dining"
+    }
+  ],
+  "extraction_method": "pdfplumber + Camelot",
+  "is_scanned": false,
+  "raw_text_preview": "MoneyBack+ Credit Card Statement\nHDFC Bank Credit Cards GSTIN : 33AAACH2702H2Z6 HSN Code : 997113\nName : NAMAN VIPUL SHAH Statement for HDFC Bank Credit Card\n0001016220004220186\nEmail : NAMANSHAH8125@GMAIL.COM Card No: 6529 15XX XXXX 0184\n0 Address : A/701 ADVENT NEEL RESIDENCY BHARUCHA ROAD Statement Date:13/06/2025 AAN: 0001016220004220186\n0 BEHIND PURNA PRANDYA HIGH SCHHOL DAHISAR\nE MUMBAI-400068 MHS Payment Due Date Total Dues Minimum Amount Due\n06/2025\nGST No :\nIn case you wish to update th",
+  "transaction_count": 2
+}

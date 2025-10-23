@@ -1,0 +1,74 @@
+{
+  "card_issuer": "HDFC",
+  "card_last_four": "0184",
+  "billing_cycle_start": "06/13/2025",
+  "billing_cycle_end": "Not found",
+  "payment_due_date": "07/03/2025",
+  "total_balance": "₹25,625.00",
+  "minimum_payment": "₹1,290.00",
+  "available_credit": "₹0.00",
+  "transactions": [
+    {
+      "date": "05/13/2025",
+      "description": "ZEPTO MARKETPLACE PRIV Bengaluru",
+      "amount": "₹447.52",
+      "category": "Groceries"
+    },
+    {
+      "date": "05/13/2025",
+      "description": "BLINK COMMERCE PVT LTD BANGALORE",
+      "amount": "₹630.00",
+      "category": "Groceries"
+    },
+    {
+      "date": "05/13/2025",
+      "description": "IGST-VPS2613471618534-RATE 18.0 -27 (Ref# 19999999980513998998780)",
+      "amount": "₹159.47",
+      "category": "Fees"
+    },
+    {
+      "date": "05/14/2025",
+      "description": "INNOVATIVE FOOD SOLUTI MUMBAI",
+      "amount": "₹853.00",
+      "category": "Dining"
+    },
+    {
+      "date": "05/16/2025",
+      "description": "MC DONALDS MUMBAI",
+      "amount": "₹399.00",
+      "category": "Dining"
+    },
+    {
+      "date": "06/05/2025",
+      "description": "LATE FEE (Ref# 19999999980605999496220)",
+      "amount": "₹900.00",
+      "category": "Fees"
+    },
+    {
+      "date": "06/05/2025",
+      "description": "IGST-VPS2615735950308-RATE 18.0 -27 (Ref# 19999999980605999496220)",
+      "amount": "₹162.00",
+      "category": "Fees"
+    },
+    {
+      "date": "06/07/2025",
+      "description": "ATO BORIVALI PETROL SUPMUMBAI",
+      "amount": "₹1,224.12",
+      "category": "Transportation"
+    },
+    {
+      "date": "06/08/2025",
+      "description": "SATYASHANTI AUTO SERVICMUMBAI",
+      "amount": "₹554.49",
+      "category": "Transportation"
+    },
+    {
+      "date": "06/13/2025",
+      "description": "FINANCE CHARGES (Ref# 19999999980613999220790) Cash points waiting for you Points expiring in Points",
+      "amount": "₹940.12",
+      "category": "Fees"
+    }
+  ],
+  "extraction_method": "pdfplumber (text)",
+  "is_scanned": false
+}

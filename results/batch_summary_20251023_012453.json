@@ -1,0 +1,60 @@
+{
+  "timestamp": "2025-10-23T01:24:53.479409",
+  "total_files": 5,
+  "successful": 5,
+  "failed": 0,
+  "banks_covered": [
+    "Amex",
+    "Chase",
+    "Citi",
+    "HDFC"
+  ],
+  "total_transactions": 42,
+  "results": [
+    {
+      "file": "amex_statement.pdf",
+      "status": "success",
+      "issuer": "Amex",
+      "card_last_four": "Not found",
+      "transaction_count": 8,
+      "total_balance": "Not found",
+      "method_used": "pdfplumber (text)"
+    },
+    {
+      "file": "chase_statement.pdf",
+      "status": "success",
+      "issuer": "Chase",
+      "card_last_four": "1234",
+      "transaction_count": 14,
+      "total_balance": "2,547.89",
+      "method_used": "pdfplumber (text)"
+    },
+    {
+      "file": "citi_statement.pdf",
+      "status": "success",
+      "issuer": "Citi",
+      "card_last_four": "Not found",
+      "transaction_count": 10,
+      "total_balance": "1,678.34",
+      "method_used": "pdfplumber (text)"
+    },
+    {
+      "file": "credit_card_statement.pdf",
+      "status": "success",
+      "issuer": "Chase",
+      "card_last_four": "1234",
+      "transaction_count": 0,
+      "total_balance": "1392.71",
+      "method_used": "pdfplumber (text)"
+    },
+    {
+      "file": "testCase01.pdf",
+      "status": "success",
+      "issuer": "HDFC",
+      "card_last_four": "0184",
+      "transaction_count": 10,
+      "total_balance": "Not found",
+      "method_used": "pdfplumber (text)"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "card_issuer": "Chase",
+  "card_last_four": "1234",
+  "billing_cycle_start": "Not found",
+  "billing_cycle_end": "Not found",
+  "payment_due_date": "Not found",
+  "total_balance": "1392.71",
+  "minimum_payment": "Not found",
+  "available_credit": "10,607.29",
+  "transactions": [],
+  "extraction_method": "pdfplumber (text)",
+  "is_scanned": false
+}

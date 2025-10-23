@@ -1,0 +1,98 @@
+{
+  "card_issuer": "Chase",
+  "card_last_four": "2702",
+  "billing_cycle_start": "Not found",
+  "billing_cycle_end": "03/07/2025",
+  "payment_due_date": "Not found",
+  "total_balance": "624.80",
+  "minimum_payment": "Not found",
+  "available_credit": "Not found",
+  "transactions": [
+    {
+      "date": "13/05/2025",
+      "description": "ZEPTO MARKETPLACE PRIV Bengaluru",
+      "amount": "$447.52",
+      "category": "Groceries"
+    },
+    {
+      "date": "13/05/2025",
+      "description": "BLINK COMMERCE PVT LTD BANGALORE",
+      "amount": "$630.00",
+      "category": "Other"
+    },
+    {
+      "date": "13/05/2025",
+      "description": "ZEPTO MARKETPLACE PRIV Bengaluru",
+      "amount": "$388.00",
+      "category": "Groceries"
+    },
+    {
+      "date": "13/05/2025",
+      "description": "IGST-VPS2613471618534-RATE 18.0 -27 (Ref# 19999999980513998998780)",
+      "amount": "$159.47",
+      "category": "Other"
+    },
+    {
+      "date": "14/05/2025",
+      "description": "INNOVATIVE FOOD SOLUTI MUMBAI",
+      "amount": "$853.00",
+      "category": "Dining"
+    },
+    {
+      "date": "16/05/2025",
+      "description": "MC DONALDS MUMBAI",
+      "amount": "$399.00",
+      "category": "Other"
+    },
+    {
+      "date": "05/06/2025",
+      "description": "LATE FEE (Ref# 19999999980605999496220)",
+      "amount": "$900.00",
+      "category": "Other"
+    },
+    {
+      "date": "05/06/2025",
+      "description": "IGST-VPS2615735950308-RATE 18.0 -27 (Ref# 19999999980605999496220)",
+      "amount": "$162.00",
+      "category": "Other"
+    },
+    {
+      "date": "06/06/2025",
+      "description": "CC PAYMENT 699192462883 PayZapp (Ref# 00000000000606017467378)",
+      "amount": "$3,000.00",
+      "category": "Other"
+    },
+    {
+      "date": "07/06/2025",
+      "description": "PETRO SURCHARGE WAIVER",
+      "amount": "$12.12",
+      "category": "Other"
+    },
+    {
+      "date": "07/06/2025",
+      "description": "ATO BORIVALI PETROL SUPMUMBAI",
+      "amount": "$1,224.12",
+      "category": "Other"
+    },
+    {
+      "date": "08/06/2025",
+      "description": "SATYASHANTI AUTO SERVICMUMBAI",
+      "amount": "$554.49",
+      "category": "Other"
+    },
+    {
+      "date": "08/06/2025",
+      "description": "PETRO SURCHARGE WAIVER",
+      "amount": "$5.49",
+      "category": "Other"
+    },
+    {
+      "date": "13/06/2025",
+      "description": "FINANCE CHARGES (Ref# 19999999980613999220790)",
+      "amount": "$940.12",
+      "category": "Other"
+    }
+  ],
+  "raw_text_preview": "MoneyBack+ Credit Card Statement\nHDFC Bank Credit Cards GSTIN : 33AAACH2702H2Z6 HSN Code : 997113\nName : NAMAN VIPUL SHAH Statement for HDFC Bank Credit Card\n0001016220004220186\nEmail : NAMANSHAH8125@GMAIL.COM Card No: 6529 15XX XXXX 0184\n0 Address : A/701 ADVENT NEEL RESIDENCY BHARUCHA ROAD Statement Date:13/06/2025 AAN: 0001016220004220186\n0 BEHIND PURNA PRANDYA HIGH SCHHOL DAHISAR\nE MUMBAI-400068 MHS Payment Due Date Total Dues Minimum Amount Due\n06/2025\nGST No :\nIn case you wish to update th",
+  "transaction_count": 14
+}

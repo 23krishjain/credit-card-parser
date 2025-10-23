@@ -1,0 +1,86 @@
+{
+    "Method Used": "pdfplumber (text)",
+    "Is Scanned PDF": false,
+    "Card Issuer": "HDFC",
+    "Card Last 4": "6529 15XX XXXX 0184\n0",
+    "Billing Cycle": "Not found to Not found",
+    "Payment Due": "Not found",
+    "Total Balance": "Not found",
+    "Minimum Payment": "Not found",
+    "Available Credit": "Not found",
+    "Credit Limit": "Not found",
+    "Transactions": [
+        {
+            "date": "2025-05-13",
+            "description": "ZEPTO MARKETPLACE PRIV Bengaluru",
+            "amount": "\u20b9447.52",
+            "category": "Groceries"
+        },
+        {
+            "date": "2025-05-13",
+            "description": "BLINK COMMERCE PVT LTD BANGALORE",
+            "amount": "\u20b9630.00",
+            "category": "Groceries"
+        },
+        {
+            "date": "2025-05-13",
+            "description": "ZEPTO MARKETPLACE PRIV Bengaluru",
+            "amount": "\u20b9-388.00",
+            "category": "Groceries"
+        },
+        {
+            "date": "2025-05-14",
+            "description": "INNOVATIVE FOOD SOLUTI MUMBAI",
+            "amount": "\u20b9853.00",
+            "category": "Dining"
+        },
+        {
+            "date": "2025-05-16",
+            "description": "MC DONALDS MUMBAI",
+            "amount": "\u20b9399.00",
+            "category": "Others"
+        },
+        {
+            "date": "2025-06-05",
+            "description": "LATE FEE (Ref# 19999999980605999496220)",
+            "amount": "\u20b9900.00",
+            "category": "Fees"
+        },
+        {
+            "date": "2025-06-06",
+            "description": "CC PAYMENT 699192462883 PayZapp (Ref# 00000000000606017467378)",
+            "amount": "\u20b9-3,000.00",
+            "category": "Others"
+        },
+        {
+            "date": "2025-06-07",
+            "description": "PETRO SURCHARGE WAIVER",
+            "amount": "\u20b9-12.12",
+            "category": "Others"
+        },
+        {
+            "date": "2025-06-07",
+            "description": "ATO BORIVALI PETROL SUPMUMBAI",
+            "amount": "\u20b91,224.12",
+            "category": "Transportation"
+        },
+        {
+            "date": "2025-06-08",
+            "description": "SATYASHANTI AUTO SERVICMUMBAI",
+            "amount": "\u20b9554.49",
+            "category": "Transportation"
+        },
+        {
+            "date": "2025-06-08",
+            "description": "PETRO SURCHARGE WAIVER",
+            "amount": "\u20b9-5.49",
+            "category": "Others"
+        },
+        {
+            "date": "2025-06-13",
+            "description": "FINANCE CHARGES (Ref# 19999999980613999220790)",
+            "amount": "\u20b9940.12",
+            "category": "Fees"
+        }
+    ]
+}

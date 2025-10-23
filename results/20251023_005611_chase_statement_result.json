@@ -1,0 +1,100 @@
+{
+  "card_issuer": "Chase",
+  "card_last_four": "1234",
+  "billing_cycle_start": "01/01/2024",
+  "billing_cycle_end": "01/31/2024",
+  "payment_due_date": "02/25/2024",
+  "total_balance": "2,547.89",
+  "minimum_payment": "65.00",
+  "available_credit": "7,452.11",
+  "transactions": [
+    {
+      "date": "01/03",
+      "description": "STARBUCKS #2847",
+      "amount": "$5.67",
+      "category": "Dining"
+    },
+    {
+      "date": "01/05",
+      "description": "AMAZON.COM",
+      "amount": "$89.99",
+      "category": "Shopping"
+    },
+    {
+      "date": "01/07",
+      "description": "SHELL OIL 34242424",
+      "amount": "$65.23",
+      "category": "Transportation"
+    },
+    {
+      "date": "01/09",
+      "description": "WHOLE FOODS MARKET",
+      "amount": "$127.45",
+      "category": "Dining"
+    },
+    {
+      "date": "01/12",
+      "description": "NETFLIX.COM",
+      "amount": "$15.99",
+      "category": "Entertainment"
+    },
+    {
+      "date": "01/14",
+      "description": "UBER *TRIP",
+      "amount": "$18.50",
+      "category": "Transportation"
+    },
+    {
+      "date": "01/16",
+      "description": "TARGET T-1234",
+      "amount": "$234.67",
+      "category": "Shopping"
+    },
+    {
+      "date": "01/18",
+      "description": "CHIPOTLE 0987",
+      "amount": "$12.45",
+      "category": "Dining"
+    },
+    {
+      "date": "01/20",
+      "description": "COSTCO WHOLESALE",
+      "amount": "$456.78",
+      "category": "Groceries"
+    },
+    {
+      "date": "01/22",
+      "description": "SPOTIFY USA",
+      "amount": "$9.99",
+      "category": "Entertainment"
+    },
+    {
+      "date": "01/24",
+      "description": "APPLE.COM/BILL",
+      "amount": "$99.00",
+      "category": "Other"
+    },
+    {
+      "date": "01/26",
+      "description": "EXXONMOBIL 12345",
+      "amount": "$72.34",
+      "category": "Transportation"
+    },
+    {
+      "date": "01/28",
+      "description": "WALMART SUPERCENTER",
+      "amount": "$187.90",
+      "category": "Shopping"
+    },
+    {
+      "date": "01/30",
+      "description": "PANERA BREAD #678",
+      "amount": "$23.45",
+      "category": "Dining"
+    }
+  ],
+  "extraction_method": "pdfplumber + Camelot",
+  "is_scanned": false,
+  "raw_text_preview": "CHASE\nAccount Number: ****1234\nStatement Period: 01/01/2024 to 01/31/2024\nPayment Due Date: 02/25/2024\nNew Balance: $2,547.89\nMinimum Payment: $65.00\nAvailable Credit: $7,452.11\nTRANSACTIONS\nDate Description Amount\n01/03 STARBUCKS #2847 $5.67\n01/05 AMAZON.COM $89.99\n01/07 SHELL OIL 34242424 $65.23\n01/09 WHOLE FOODS MARKET $127.45\n01/12 NETFLIX.COM $15.99\n01/14 UBER *TRIP $18.50\n01/16 TARGET T-1234 $234.67\n01/18 CHIPOTLE 0987 $12.45\n01/20 COSTCO WHOLESALE $456.78\n01/22 SPOTIFY USA $9.99\n01/24 APP",
+  "transaction_count": 14
+}
