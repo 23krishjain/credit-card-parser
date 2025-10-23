@@ -1,73 +1,58 @@
-Universal Credit Card Statement Parser
+# Universal Credit Card Statement Parser 💳
 
-A powerful, universal parser that extracts transactions and key details from credit card statements of 10+ major banks — both Indian and international.
-Built with a modular architecture and a user-friendly Streamlit interface.
+A powerful, universal parser that extracts transactions and key details from credit card statements of 10+ major banks — both Indian and international. Built with a modular architecture and a user-friendly Streamlit interface.
 
-🏦 Supported Banks
-🇮🇳 Indian Banks
+---
 
-HDFC Bank
+## 🏦 Supported Banks
 
-ICICI Bank
+### 🇮🇳 Indian Banks
+- HDFC Bank
+- ICICI Bank
+- State Bank of India (SBI)
+- Axis Bank
+- Kotak Mahindra Bank
 
-State Bank of India (SBI)
+### 🌍 International Banks
+- Chase
+- American Express (Amex)
+- Citibank
+- Discover
+- Bank of America
 
-Axis Bank
+---
 
-Kotak Mahindra Bank
+## 🚀 Features
+- **Automatic Bank Detection** — Identifies the bank from PDF content
+- **Smart Transaction Extraction** — Uses pdfplumber, Camelot, Tabula, and OCR for scanned PDFs
+- **Transaction Categorization** — Auto-classifies spending patterns
+- **Scanned PDF Support** — Converts image-based statements to text using OCR
+- **Multiple Export Formats** — Clean JSON output for easy integration
+- **Interactive Web Interface** — Built with Streamlit
 
-🌍 International Banks
+---
 
-Chase
+## 🧩 Project Structure
 
-American Express (Amex)
-
-Citibank
-
-Discover
-
-Bank of America
-
-🚀 Features
-
-Automatic Bank Detection — Identifies the bank from the PDF content
-
-Smart Transaction Extraction — Extracts data using pdfplumber, Camelot, Tabula, and OCR (for scanned PDFs)
-
-Transaction Categorization — Auto-classifies spending patterns
-
-Scanned PDF Support — Converts image-based statements to text using OCR
-
-Multiple Export Formats — Clean JSON output for easy integration
-
-Interactive Web Interface — Built with Streamlit for simple, intuitive use
-
-🧩 Project Structure
 credit-card-parser/
-├── parser_unified.py        # Main parser logic (core library)
-├── unified_app.py           # Streamlit web app
-├── requirements.txt         # Dependencies list
-├── sample_statements/       # Sample test PDFs
-│   ├── testCase01.pdf       # HDFC Bank sample
-│   ├── chase_statement.pdf  # Chase Bank sample
-│   ├── amex_statement.pdf   # Amex sample
-│   └── citi_statement.pdf   # Citibank sample
-└── results/                 # Output directory for parsed results
+├── parser_unified.py # Core parser logic
+├── unified_app.py # Streamlit web app
+├── requirements.txt # Dependencies list
+├── runtime.txt # Python runtime version
+├── Dockerfile # Dockerfile for Render deployment
+├── render-build.sh # (Optional, for system installs if needed)
+├── sample_statements/ # Sample PDF statements for testing
+└── results/ # Output directory for parsed results
 
-⚙️ Installation & Setup
 
-Clone the repository
+---
 
+## ⚙️ Installation & Setup (Local)
+
+1. **Clone the repository**
+```bash
 git clone https://github.com/23krishjain/credit-card-parser.git
 cd credit-card-parser
-
-
-Create and activate a virtual environment (recommended)
-
-python -m venv venv
-source venv/bin/activate      # For Mac/Linux
-venv\Scripts\activate         # For Windows
-
 
 Install dependencies
 
@@ -77,26 +62,6 @@ pip install -r requirements.txt
 Run the Streamlit app
 
 streamlit run unified_app.py
-
-📦 Requirements
-# Core Application
-streamlit==1.28.0
-pandas==2.0.3
-
-# PDF Text Extraction
-pdfplumber==0.10.0
-
-# Advanced Table Extraction
-camelot-py[base]==0.10.1
-tabula-py==2.7.0
-
-# OCR for Scanned PDFs
-pytesseract==0.3.10
-pdf2image==1.16.3
-pillow==10.0.0
-
-# File Upload Support
-python-multipart==0.0.6
 
 🧠 How It Works
 
@@ -131,7 +96,7 @@ The parsed data is displayed and saved in the results/ directory.
 
 🧪 Sample Test Files
 
-You can test the parser using sample statements in the sample_statements/ folder:
+Test the parser using PDFs in sample_statements/:
 
 amex_statement.pdf
 
@@ -140,6 +105,35 @@ chase_statement.pdf
 citi_statement.pdf
 
 testCase01.pdf (HDFC)
+
+📦 Deployment on Render (Docker)
+
+Add Dockerfile (already in repo) and .dockerignore.
+
+Commit and push to GitHub.
+
+On Render
+:
+
+New → Web Service → Docker
+
+Connect your repo → Branch main
+
+Build & deploy
+
+Access your live app at https://<your-app-name>.onrender.com
+
+Build Command (Render):
+
+bash render-build.sh && pip install -r requirements.txt
+
+
+Start Command:
+
+streamlit run unified_app.py --server.port $PORT --server.address 0.0.0.0
+
+
+Tip: Streamlit apps on Render should use /tmp for temporary file storage.
 
 💡 Future Improvements
 
@@ -154,5 +148,7 @@ Improve OCR accuracy with AI-based models
 🧑‍💻 Author
 
 Krish Jain
+
 📧 23krishjain@gmail.com
-💼 23krishjain
+
+
