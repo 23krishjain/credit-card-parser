@@ -1,6 +1,12 @@
 # Universal Credit Card Statement Parser 💳
 
 A powerful, universal parser that extracts transactions and key details from credit card statements of 10+ major banks — both Indian and international. Built with a modular architecture and a user-friendly Streamlit interface.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1399040c-0e6b-42e8-b1d2-e4e8b2d344a0" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b90190dd-3139-4486-9605-a89feba0d579" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0a38af1b-48be-42bc-a99f-32c719b808d2" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f90a31ba-95de-4651-a032-b024850b68b0" />
+
+
 
 ---
 
@@ -32,17 +38,18 @@ A powerful, universal parser that extracts transactions and key details from cre
 
 ---
 
-## 🧩 Project Structure
+### 🧩 Project Structure
 
+```text
 credit-card-parser/
-├── parser_unified.py # Core parser logic
-├── unified_app.py # Streamlit web app
-├── requirements.txt # Dependencies list
-├── runtime.txt # Python runtime version
-├── Dockerfile # Dockerfile for Render deployment
-├── render-build.sh # (Optional, for system installs if needed)
-├── sample_statements/ # Sample PDF statements for testing
-└── results/ # Output directory for parsed results
+├── parser_unified.py       # Core parser logic
+├── unified_app.py          # Streamlit web app
+├── requirements.txt        # Dependencies list
+├── runtime.txt             # Python runtime version
+├── Dockerfile              # Dockerfile for Render deployment
+├── render-build.sh         # (Optional) System installs if needed
+├── sample_statements/      # Sample PDF statements for testing
+└── results/                # Output directory for parsed results
 
 
 ---
