@@ -392,17 +392,23 @@ class UniversalCreditCardParser:
         except:
             return date_str
     
-    def format_amount(self, amount_str: str, currency_symbol: str) -> str:
-        """Format amount with proper currency symbol"""
+    def format_amount(self, amount_str: str, currency_symbol: str, is_credit: bool = False) -> str:
+        """Format amount string with currency symbol and commas"""
         try:
             # Clean the amount string
             amount_clean = amount_str.replace(',', '').replace('Rs.', '').replace('Rs', '').replace('₹', '').replace('$', '').strip()
             amount_float = float(amount_clean)
             
             if currency_symbol == '₹':
-                return f"₹{amount_float:,.2f}"
+                formatted = f"₹{amount_float:,.2f}"
             else:
-                return f"${amount_float:,.2f}"
+                formatted = f"${amount_float:,.2f}"
+                
+            # Add CR indicator for credit transactions
+            if is_credit:
+                formatted = f"{formatted} CR"
+                
+            return formatted
         except:
             return amount_str
     
@@ -418,7 +424,12 @@ class UniversalCreditCardParser:
         # Statement Date: "Statement Date:13/06/2025"
         stmt_match = re.search(r'Statement Date[:\s]*(\d{2}/\d{2}/\d{4})', text, re.IGNORECASE)
         if stmt_match:
-            fields['statement_date'] = self.parse_indian_date(stmt_match.group(1))
+            fields['statement_date'] = stmt_match.group(1)
+        
+        stmt_period_match = re.search(r'Statement Period[:\s]*(\d{2}/\d{2}/\d{4})\s*to\s*(\d{2}/\d{2}/\d{4})', text, re.IGNORECASE)
+        if stmt_period_match:
+         fields['statement_start'] = self.parse_indian_date(stmt_period_match.group(1))
+         fields['statement_end'] = self.parse_indian_date(stmt_period_match.group(2))
         
         # Payment Due Date line: "03/07/2025 25,625.00 1,290.00"
         due_line_match = re.search(
@@ -570,6 +581,40 @@ class UniversalCreditCardParser:
         currency = self.ISSUER_PATTERNS.get(issuer, {}).get('currency_symbol', '$')
         
         print(f"🔍 Extracting transactions for {issuer}...")
+        if issuer == 'HDFC':
+            print("🔍 Using HDFC-specific transaction extraction...")
+            
+            # Pattern for HDFC transaction lines with credit indicator
+            hdfc_pattern = r'^(\d{2}/\d{2}/\d{4})\s+(.+?)\s+([\d,]+\.\d{2})\s*(Cr)?\s*$'
+            
+            lines = text.split('\n')
+            for line in lines:
+                line = line.strip()
+                if not line:
+                    continue
+                
+                # Try to match HDFC transaction pattern
+                match = re.match(hdfc_pattern, line, re.IGNORECASE)
+                if match:
+                    date = match.group(1)
+                    description = match.group(2).strip()
+                    amount = match.group(3)
+                    is_credit = match.group(4)  # This will be 'Cr' if it's a credit
+                    
+                    # Format amount with ₹ symbol and add CR indicator
+                    formatted_amount = self.format_amount(amount, '₹')
+                    if is_credit:
+                        formatted_amount = f"{formatted_amount} CR"
+                    
+                    transactions.append(Transaction(
+                        date=self.parse_indian_date(date),
+                        description=description[:100],
+                        amount=formatted_amount,
+                        category=self.categorize_transaction(description)
+                    ))
+            
+            print(f"✅ Found {len(transactions)} HDFC transactions")
+            return transactions
         
         # Chase-specific pattern - handle table format
         if issuer == 'Chase':
@@ -928,8 +973,30 @@ class UniversalCreditCardParser:
         if issuer == 'HDFC':
             hdfc_fields = self.extract_hdfc_fields_special(text)
             card_last_four = hdfc_fields.get('card_last_four', 'Not found')
-            statement_start = hdfc_fields.get('statement_date', 'Not found')
-            statement_end = 'Not found'
+            statement_date = hdfc_fields.get('statement_date', 'Not found')
+            
+            # SIMPLER BILLING CYCLE CALCULATION FOR HDFC
+            if statement_date != 'Not found':
+                try:
+                    # Parse statement date (DD/MM/YYYY)
+                    from datetime import datetime, timedelta
+                    stmt_date_obj = datetime.strptime(statement_date, '%d/%m/%Y')
+                    
+                    # Billing end is statement date
+                    statement_end = statement_date
+                    
+                    # Billing start is approximately 30 days before (standard billing cycle)
+                    billing_start_obj = stmt_date_obj - timedelta(days=30)
+                    statement_start = billing_start_obj.strftime('%d/%m/%Y')
+                    
+                except Exception as e:
+                    print(f"⚠️ Error calculating HDFC billing cycle: {e}")
+                    statement_start = 'Not found'
+                    statement_end = statement_date
+            else:
+                statement_start = 'Not found'
+                statement_end = 'Not found'
+            
             due_date = hdfc_fields.get('payment_due_date', 'Not found')
             total_balance = hdfc_fields.get('total_balance', 'Not found')
             minimum_payment = hdfc_fields.get('minimum_payment', 'Not found')

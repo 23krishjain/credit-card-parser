@@ -21,7 +21,7 @@ st.set_page_config(
 st.markdown("""
 <style>
     .main-header { font-size: 2.5rem; color: #1f77b4; text-align: center; margin-bottom: 2rem; }
-    .success-box { background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 5px; padding: 15px; margin: 10px 0; }
+    .success-box { background-color: #001f3f; border: 1px solid #001f3f; border-radius: 5px; padding: 15px; margin: 10px 0; }
     .info-box { background-color: #d1ecf1; border: 1px solid #bee5eb; border-radius: 5px; padding: 15px; margin: 10px 0; }
     .transaction-table { font-size: 0.9em; }
     .bank-logo { font-size: 1.5em; font-weight: bold; padding: 10px; border-radius: 5px; text-align: center; }
@@ -73,8 +73,8 @@ class UnifiedCreditCardApp:
             st.metric("Payment Due", statement.payment_due_date)
             st.metric("Available Credit", statement.available_credit)
         with col4:
-            st.metric("Total Balance", statement.total_balance)
-            st.metric("Min Payment", statement.minimum_payment)
+            st.metric("Total Dues", statement.total_balance)
+            st.metric("Min Amount Due", statement.minimum_payment)
 
     def display_transactions(self, statement):
         st.markdown(f"### 💳 Transactions ({len(statement.transactions)})")
