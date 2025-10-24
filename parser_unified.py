@@ -729,6 +729,7 @@ class UniversalCreditCardParser:
     
     def extract_transactions_camelot(self, pdf_path: str, issuer: str) -> List[Transaction]:
         if not CAMELOT_AVAILABLE:
+            print("⚠️ Camelot not available")
             return []
         
         print("📊 Using Camelot for table extraction...")
@@ -743,8 +744,9 @@ class UniversalCreditCardParser:
                 strip_text='\n',
                 line_scale=40  # Better for HDFC tables
             )
-            
+            print(f"✅ Camelot loaded {len(tables)} tables")
             if len(tables) == 0:
+                print("⚠️ Lattice failed, trying stream...")
                 tables = camelot.read_pdf(
                     str(pdf_path), 
                     pages='all', 
@@ -819,6 +821,8 @@ class UniversalCreditCardParser:
             
         except Exception as e:
             print(f"  Camelot extraction failed: {e}")
+            import traceback
+            traceback.print_exc()
             return []
     
     def extract_transactions_tabula(self, pdf_path: str, issuer: str) -> List[Transaction]:
@@ -1054,6 +1058,10 @@ class UniversalCreditCardParser:
                     all_transactions.extend(camelot_trans)
                     extraction_method += " + Camelot backup"
         else:
+            text_trans = self.extract_transactions_from_text(text, issuer)
+            if text_trans:
+                all_transactions.extend(text_trans)
+            extraction_method += " (text)"
             # For other banks, use the original logic
             if use_advanced_methods:
                 # Try Camelot first (best for structured tables)
