@@ -5,7 +5,8 @@ A powerful, universal parser that extracts transactions and key details from cre
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a0fe0855-7e38-45ee-9268-a78a584ef053" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0a38af1b-48be-42bc-a99f-32c719b808d2" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1c2200a8-185b-48f3-a784-602aade732f4" />
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f90a31ba-95de-4651-a032-b024850b68b0" />
 
 
