@@ -2,11 +2,8 @@
 
 A powerful, universal parser that extracts transactions and key details from credit card statements of 10+ major banks — both Indian and international. Built with a modular architecture and a user-friendly Streamlit interface.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1399040c-0e6b-42e8-b1d2-e4e8b2d344a0" />
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a0fe0855-7e38-45ee-9268-a78a584ef053" />
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1c2200a8-185b-48f3-a784-602aade732f4" />
-
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b90190dd-3139-4486-9605-a89feba0d579" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0a38af1b-48be-42bc-a99f-32c719b808d2" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f90a31ba-95de-4651-a032-b024850b68b0" />
 
 
@@ -52,32 +49,45 @@ credit-card-parser/
 ├── render-build.sh         # (Optional) System installs if needed
 ├── sample_statements/      # Sample PDF statements for testing
 └── results/                # Output directory for parsed results
+````
 
 ---
 
 ## ⚙️ Installation & Setup (Local)
 
-### Clone the repository
+### 1. Clone the repository
+
 ```bash
 git clone https://github.com/23krishjain/credit-card-parser.git
 cd credit-card-parser
-### Install dependencies
+```
+
+### 2. Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-Run the Streamlit app
+### 3. Run the Streamlit app
+
+```bash
 streamlit run unified_app.py
+```
 
-🧠 How It Works
+---
 
-Upload your credit card statement (PDF) through the web app.
+## 🧠 How It Works
 
-The system automatically detects the bank and statement type.
+1. Upload your credit card statement (PDF) through the web app.
+2. The system automatically detects the bank and statement type.
+3. It extracts, cleans, and structures transactions into a unified JSON format.
+4. The parsed data is displayed and saved in the `results/` directory.
 
-It extracts, cleans, and structures transactions into a unified JSON format.
+---
 
-The parsed data is displayed and saved in the results/ directory.
+## 🧾 Output Example (JSON)
 
-🧾 Output Example (JSON)
+```json
 {
   "bank": "HDFC Bank",
   "statement_period": "01 Jun 2024 - 30 Jun 2024",
@@ -97,64 +107,68 @@ The parsed data is displayed and saved in the results/ directory.
   ],
   "total_due": 4811.50
 }
+```
 
-🧪 Sample Test Files
+---
 
-Use the PDFs in the sample_statements/ folder to test the parser:
+## 🧪 Sample Test Files
 
-amex_statement.pdf
+Use the PDFs in the `sample_statements/` folder to test the parser:
 
-chase_statement.pdf
+* `amex_statement.pdf`
+* `chase_statement.pdf`
+* `citi_statement.pdf`
+* `testCase01.pdf` (HDFC)
 
-citi_statement.pdf
+---
 
-testCase01.pdf (HDFC)
-
-📦 Deployment on Render (Docker)
+## 📦 Deployment on Render (Docker)
 
 Ensure the following files are present:
 
-Dockerfile
+* `Dockerfile`
+* `.dockerignore`
+* `render-build.sh`
 
-.dockerignore
+### Steps:
 
-render-build.sh
+1. Commit and push your code to GitHub.
+2. On Render:
 
-Commit and push your code to GitHub.
+   * Create a new → Web Service → Docker
+   * Connect your repo → Select the main branch
+   * Build & deploy
+3. Access your app at `https://<your-app-name>.onrender.com`
 
-On Render:
+### Build Command (Render):
 
-Create a new → Web Service → Docker
-
-Connect your repo → Select the main branch
-
-Build & deploy
-
-Access your app at https://<your-app-name>.onrender.com
-
-Build Command (Render):
-
+```bash
 bash render-build.sh && pip install -r requirements.txt
+```
 
+### Start Command:
 
-Start Command:
-
+```bash
 streamlit run unified_app.py --server.port $PORT --server.address 0.0.0.0
+```
 
+💡 Tip: Streamlit apps on Render should use `/tmp` for temporary file storage.
 
-💡 Tip: Streamlit apps on Render should use /tmp for temporary file storage.
+---
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
-Add support for more international banks
+* Add support for more international banks
+* Export transactions to CSV / Excel formats
+* Integrate with budgeting dashboards
+* Improve OCR accuracy using AI-based models
 
-Export transactions to CSV / Excel formats
+---
 
-Integrate with budgeting dashboards
+## 👨‍💻 Author
 
-Improve OCR accuracy using AI-based models
+**Krish Jain**
+📧 [23krishjain@gmail.com](mailto:23krishjain@gmail.com)
 
-👨‍💻 Author
+```
 
-Krish Jain
-📧 23krishjain@gmail.com
