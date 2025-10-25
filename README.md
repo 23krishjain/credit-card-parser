@@ -22,16 +22,19 @@ A powerful, intelligent credit card statement parser that combines **fast regex 
 
 ## 📸 Screenshots
 
-### Upload & Parse
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0672d91c-24e7-43d3-98b7-2ce877419d89" />
+### Upload & Parse (Option to Select Force AI parser)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/13022851-a71f-43c8-92f4-9d354c3cd098" />
+
 
 
 ### Extracted Data
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d6e1fe49-6c3b-440e-8e5c-631cb085c81e" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9d713f85-01b2-4d6f-aa25-6d5ec299e90c" />
+
 
 
 ### Transaction Analysis
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bbefc65e-ffd5-4654-a03f-fe1879dfd21f" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9ea4b8d7-682a-4bc5-850b-bf07171bdc09" />
+
 
 
 ---
