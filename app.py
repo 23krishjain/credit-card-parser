@@ -25,7 +25,7 @@ st.set_page_config(
 st.markdown("""
 <style>
     .main-header { font-size: 2.5rem; color: #1f77b4; text-align: center; margin-bottom: 2rem; }
-    .success-box { background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 5px; padding: 15px; margin: 10px 0; }
+    .success-box { background-color: #000080; border: 1px solid #000080; border-radius: 5px; padding: 15px; margin: 10px 0; }
     .info-box { background-color: #d1ecf1; border: 1px solid #bee5eb; border-radius: 5px; padding: 15px; margin: 10px 0; }
 </style>
 """, unsafe_allow_html=True)
